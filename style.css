@@ -1,0 +1,30 @@
+#general {
+    margin:auto;
+    width: 60%;
+    height: 600px;
+    padding-top: 325px;
+}
+
+#introduction {
+    margin: auto;
+    width: 60%; 
+    height: 600px;
+}
+
+#courses {
+    margin: auto;
+    width: 60%;
+    height: 600px;
+}
+
+#experience {
+    margin: auto;
+    width: 60%;
+    height: 600px;
+}
+
+#projects {
+    margin: auto;
+    width: 60%;
+    height: 600px;
+}
