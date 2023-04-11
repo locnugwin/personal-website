@@ -1,20 +1,13 @@
-:root,
-.light-mode {
-    margin: auto;
-    width: auto;
-    background-color: #f8f9fa;
-    border-style: solid;
-    border-color: #f8f9fa;
-    color: #000000;
+body {
+    background-color: white;
+    color: black;
 }
 
 .dark-mode {
-    margin: auto;
-    width: auto;
-    background-color: #111111;
-    border-style: solid;
-    border-color: #111111;
-    color: #f8f9fa;
+    /* background-color: #121212;
+    color: #f8f9fa; */
+    background-color: black;
+    color: white;
 }
 
 #general {
@@ -51,5 +44,5 @@
 #quote {
     margin: auto;
     width: 60%;
-    height: 30px;
+    height: auto;
 }
