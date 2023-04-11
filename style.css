@@ -1,3 +1,22 @@
+:root,
+.light-mode {
+    margin: auto;
+    width: auto;
+    background-color: #f8f9fa;
+    border-style: solid;
+    border-color: #f8f9fa;
+    color: #000000;
+}
+
+.dark-mode {
+    margin: auto;
+    width: auto;
+    background-color: #111111;
+    border-style: solid;
+    border-color: #111111;
+    color: #f8f9fa;
+}
+
 #general {
     margin:auto;
     width: 60%;
@@ -27,4 +46,10 @@
     margin: auto;
     width: 60%;
     height: 600px;
+}
+
+#quote {
+    margin: auto;
+    width: 60%;
+    height: 30px;
 }
