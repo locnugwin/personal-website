@@ -8,15 +8,26 @@
     <meta name="author" content="Loc Nguyen">
     <!--CSS-->
     <link rel="stylesheet" href="/style.css">
+    <!--JavaScript-->
+    <script src="app.js"></script>
     <!--Favicon-->
     <link rel="icon" href="/img/loctransparent.png">
     <title>Loc Nguyen</title>
 </head>
 <body>
+    <header>
+        <img class="logo" src="/img/loctransparent.png" href=#genral alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#introduction">About</li>
+                <li><a href="#experience">Experience</li>
+                <li><a href="#projects">Projects</li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button onclick="colorChange()">Toggle Dark Mode</button></a>
+    </header>
     <!--General Information-->
     <div id="general">
-        <button onclick="colorChange()">Toggle dark mode</button>
-        <script src="app.js"></script>
         <h1>Hi, I'm Loc</h1>
         <p>I'm a student at the University of Nebraska-Lincoln double majoring in Computer Science and Mathematics.</p>
         <a href="https://www.linkedin.com/in/locnugwin/" target="_blank">LinkedIn</a>
@@ -27,7 +38,7 @@
     <!--Introduction-->
     <div id="introduction">
         <h1>About Me</h1>
-        <p>I'm am a first-year student at the University of Nebraska-Lincoln double majoring in Computer Science and Mathematics on a Discrete Mathematics and Cryptography option. I am also pursing minors in Communication Studies, Computational Biology & Bioinformatics, and Asian Studies. <br><br> I aspire to become a software engineer for a healthcare company, or work in medical research. My interests lie in the intersectionality of computer science and medicine. I aim to apply the computational skills I will gain into improving database management systems related to patient care and other medical technologies, or to work on making advancements in studying cancer informatics.
+        <p>I'm am a second-year student at the University of Nebraska-Lincoln double majoring in Computer Science and Mathematics on a Discrete Mathematics and Cryptography option. I am also pursing minors in Communication Studies, Computational Biology & Bioinformatics, and Asian Studies.
         </p>
     </div>
 
@@ -41,26 +52,6 @@
     <div id="projects">
         <h1>Projects</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia modi corporis ex harum similique tempore incidunt nemo perspiciatis sit doloremque praesentium dolor explicabo voluptas possimus, aperiam voluptatibus. Ex, nihil.</p>
-        <!-- Need to clean up the code for the card class -->
-        <!-- <div class="container">
-            <div class="card">
-                <div class="card-header">
-                    <img src="img/WebDemo.png"/>
-                </div>
-                <div class="card-body">
-                    <span class="tag tag-html-orange">HTML</span>
-                    <span class="tag tag-css-blue">CSS</span> 
-                    <span class="tag tag-js-yellow">JavaScript</span>
-                    <h4>
-                        Personal Website
-                    </h4>
-                    <p>
-                        You're on it right now!
-                        <a href="https://github.com/locnugwin/personal-website" target="_blank">Check me out.</a>
-                    </p>
-                </div>
-            </div>
-        </div> -->
     </div>
 </body>
 </html>
