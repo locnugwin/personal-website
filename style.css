@@ -1,14 +1,17 @@
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-body {
-    background-color: #dbd6cb;
-    color: #171717;
+:root {
+    --link-hover-color: rgb(122, 186, 227); /* Define a custom property for hover color */
 }
 
-.dark-mode {
+body {
     background-color: #171717;
     color: #dbd6cb;
+}
+.light-mode {
+    background-color: #dbd6cb;
+    color: #171717;
 }
 
 li, a, button {
@@ -16,6 +19,7 @@ li, a, button {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+    color: #dbd6cb;
 }
 
 header {
@@ -46,16 +50,28 @@ header {
 }
 
 .nav_links li a:hover {
-    color: #0088a9;
+    color: var(--link-hover-color);
 }
 
 .nav_links li a:visited {
     text-decoration: none;
 }
 
+.nav_links li a.light-mode:hover {
+    color: var(--link-hover-color);
+}
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
 button {
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: rgba(44,93,152,1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -63,14 +79,14 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: rgba(44,93,152,0.8);
 }
 
 #general {
     margin:auto;
     width: 60%;
     height: 600px;
-    padding-top: 325px;
+    padding-top: 320px;
 }
 
 
@@ -91,78 +107,3 @@ button:hover {
     width: 60%;
     height: 600px;
 }
-
-#quote {
-    margin: auto;
-    width: 60%;
-    height: auto;
-}
-
-/* * {
-    box-sizing: border-box;
-}
-
-.container {
-    display: flex;
-    width: 1040px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card {
-    margin: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 300px;
-}
-
-.card:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease;
-}
-
-.card-header img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 100;
-}
-
-.tag {
-    background: #cccccc;
-    border-radius: 50px;
-    font-size: 12px;
-    margin: 0;
-    color: white;
-    padding: 2px 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.tag-html-orange {
-    background-color: #f06529;
-}
-
-.tag-css-blue {
-    background-color: #2965f1;
-}
-
-.tag-js-yellow {
-    background-color: #f0db4f;
-}
-
-.card-body p {
-    font-size: 13px;
-    margin: 0 0 40px;
-} */
