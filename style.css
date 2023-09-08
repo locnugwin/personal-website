@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-    --link-hover-color: rgb(122, 186, 227); /* Define a custom property for hover color */
+    --link-hover-color: rgb(122, 186, 227); /* Define custom property for hover color */
 }
 
 body {
@@ -13,6 +13,13 @@ body {
     background-color: #dbd6cb;
     color: #171717;
 }
+
+div.profile-picture-container img {
+    border-radius: 50%;
+    float: right;
+    margin-top: -660px;
+    margin-right: 390px;
+  }
 
 li, a, button {
     font-family: "Poppins";
@@ -65,8 +72,9 @@ a {
     transition: all 0.3s ease 0s;
 }
 
+/*This is dummy, but it keeps the hover colors consistent*/
 a:hover {
-    color: var(--link-hover-color);
+    color: var(--link-hover-color) !important; 
 }
 
 button {
@@ -86,7 +94,7 @@ button:hover {
     margin:auto;
     width: 60%;
     height: 600px;
-    padding-top: 320px;
+    padding-top: 250px;
 }
 
 
