@@ -115,3 +115,44 @@ button:hover {
     width: 60%;
     height: 600px;
 }
+
+/* CSS for project cards */
+.project-container {
+    display: flex; /* Display cards in a row */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+    gap: 20px; /* Add spacing between cards */
+}
+
+.project-card {
+    background-color: #272727;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Adjust card width as needed */
+    transition: transform 0.2s;
+}
+
+.project-card h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgba(44,93,152,1);
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: rgba(44,93,152,0.8);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
