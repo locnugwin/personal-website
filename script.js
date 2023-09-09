@@ -6,14 +6,25 @@ function toggleMode() {
     const modeToggle = document.getElementById("modeToggle"); // Get the anchor element with the ID "modeToggle"
     const button = modeToggle.querySelector("button"); // Get the button element inside the anchor
 
+    // Get all project cards
+    const projectCards = document.querySelectorAll(".project-card");
+
     if (colorElement.classList.contains("light-mode")) {
         // If in light mode, change button text to "Toggle Dark Mode" and update link colors
         button.textContent = "Toggle Dark Mode";
         updateLinkColors("#171717", "#dbd6cb"); // Update link colors with dark mode colors
+        // Add the "light-mode" class to project cards
+        projectCards.forEach(card => {
+            card.classList.add("light-mode");
+        });
     } else {
         // If in dark mode, change button text to "Toggle Light Mode" and update link colors
         button.textContent = "Toggle Light Mode";
         updateLinkColors("#dbd6cb", "#171717"); // Update link colors with light mode colors
+                // Remove the "light-mode" class from project cards
+                projectCards.forEach(card => {
+                    card.classList.remove("light-mode");
+                });
     }
 }
 

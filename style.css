@@ -145,7 +145,6 @@ button:hover {
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: rgba(44,93,152,1);
     font-weight: bold;
 }
 
@@ -154,5 +153,14 @@ button:hover {
 }
 
 .project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card.light-mode {
+    background-color: #f0ebe0; /* Set the background color for light mode */
+    border-color: #000000; /* Set the border color for light mode */
+}
+
+.project-card.light-mode:hover {
     transform: scale(1.05);
 }
