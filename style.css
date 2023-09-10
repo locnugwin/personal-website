@@ -124,11 +124,13 @@ button:hover {
 }
 
 .project-card {
+    float: inline-start;
     background-color: #272727;
     border: 1px solid #ffffff;
     border-radius: 5px;
     padding: 20px;
-    width: 300px; /* Adjust card width as needed */
+    width: 300px;
+    margin-right: 15px;
     transition: transform 0.2s;
 }
 
