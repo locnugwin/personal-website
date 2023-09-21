@@ -2,5 +2,5 @@
 ---
 Currently need to fix:
 - Persistent Navbar
-- Mobile=Friendly Scaling
+- Mobile-Friendly Scaling
 - System User Preference for Theme
