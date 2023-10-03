@@ -129,7 +129,9 @@ button:hover {
     border: 1px solid #ffffff;
     border-radius: 5px;
     padding: 20px;
+    height: 150px;
     width: 300px;
+    justify-content: space-between; /* Separate title/paragraph and link */
     margin-right: 15px;
     transition: transform 0.2s;
 }
